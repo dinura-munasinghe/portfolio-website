@@ -1,0 +1,157 @@
+.main {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 6rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #a0a0b0;
+  font-size: 1.2rem;
+}
+
+.timelineContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.timeline {
+  position: relative;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: var(--surface-border);
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 3rem;
+  width: 50%;
+}
+
+.timelineItem:nth-child(odd) {
+  left: 0;
+  padding-right: 3rem;
+}
+
+.timelineItem:nth-child(even) {
+  left: 50%;
+  padding-left: 3rem;
+}
+
+.timelineDot {
+  position: absolute;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  background: var(--surface);
+  border: 2px solid var(--accent-1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-1);
+  z-index: 2;
+}
+
+.timelineItem:nth-child(odd) .timelineDot {
+  right: -20px;
+}
+
+.timelineItem:nth-child(even) .timelineDot {
+  left: -20px;
+}
+
+.timelineContent {
+  padding: 2rem;
+  border-radius: 16px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.timelineContent:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-1);
+}
+
+.orgHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(42, 42, 63, 0.5);
+}
+
+.orgLogo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.org {
+  color: var(--accent-1);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.period {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--accent-3);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.roleTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+.desc {
+  color: #a0a0b0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+  .timelineItem {
+    width: 100%;
+    padding-left: 60px !important;
+    padding-right: 0 !important;
+    left: 0 !important;
+  }
+  .timelineDot {
+    left: 0 !important;
+  }
+}

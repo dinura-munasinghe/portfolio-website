@@ -1,0 +1,40 @@
+.footer {
+  width: 100%;
+  border-top: 1px solid var(--surface-border);
+  background-color: var(--background);
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #606070;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socialLinks a {
+  color: #606070;
+  transition: all 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: var(--accent-1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
