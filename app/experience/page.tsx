@@ -11,7 +11,7 @@ export default function Experience() {
       organization: "AIESEC in IIT",
       period: "2026 – Present",
       description: "Leading B2C marketing strategy and departmental operations to drive global exchange participation and achieve Official Expansion status.",
-      logo: "/AIESEC-Human-White (1).png"
+      logo: "/Asset 1AiesecIITLogo (1).png"
     },
     {
       role: "National Showcasing Team, Graphic Designer",
