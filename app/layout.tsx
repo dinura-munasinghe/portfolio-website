@@ -4,8 +4,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Dinura Munasinghe | Portfolio",
+  title: "Dinura Munasinghe",
   description: "Modern portfolio of Dinura Munasinghe showcasing graphic design, Figma prototypes, and software development projects.",
+  icons: {
+    icon: '/favicon.ico?v=2',
+  },
 };
 
 export default function RootLayout({

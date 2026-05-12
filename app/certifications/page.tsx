@@ -8,9 +8,9 @@ export default function Certifications() {
   const certifications = [
     // Placeholder to show how it will look. User can update this later.
     {
-      name: "Your Certification Name",
-      issuer: "Issuing Organisation",
-      year: "2024",
+      name: "ENGINEERING TEENS - ROBOTICS",
+      issuer: "IDEA Engine (PVT) LTD.",
+      year: "2019",
       link: "#"
     }
   ];
@@ -28,14 +28,14 @@ export default function Certifications() {
   return (
     <main className={styles.main}>
       <section className={styles.header}>
-        <motion.h1 
+        <motion.h1
           className={styles.title}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
         >
           My <span className="text-gradient">Certifications</span>
         </motion.h1>
-        <motion.p 
+        <motion.p
           className={styles.subtitle}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -45,7 +45,7 @@ export default function Certifications() {
         </motion.p>
       </section>
 
-      <motion.section 
+      <motion.section
         className={styles.certContainer}
         variants={containerVariants}
         initial="hidden"
@@ -53,7 +53,7 @@ export default function Certifications() {
       >
         <div className={styles.certGrid}>
           {certifications.map((cert, index) => (
-            <motion.a 
+            <motion.a
               href={cert.link}
               target="_blank"
               rel="noreferrer"
@@ -70,8 +70,8 @@ export default function Certifications() {
               </div>
             </motion.a>
           ))}
-          
-          <motion.div 
+
+          <motion.div
             className={`${styles.certCard} ${styles.addMoreCard} glass`}
             variants={itemVariants}
           >

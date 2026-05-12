@@ -1,0 +1,144 @@
+.main {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 6rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #a0a0b0;
+  font-size: 1.2rem;
+}
+
+.educationContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.eduCard {
+  padding: 3rem;
+  border-radius: 20px;
+  border-left: 4px solid var(--accent-1);
+  transition: transform 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.eduCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(42, 42, 63, 0.5);
+  padding-bottom: 2rem;
+}
+
+.logoWrapper {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.uniLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.degree {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.institution {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent-1);
+}
+
+.metaData {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e0e0ff;
+  font-weight: 500;
+}
+
+.accentIcon {
+  color: var(--accent-3);
+}
+
+.descriptionBox {
+  background: rgba(18, 18, 26, 0.6);
+  padding: 1.5rem;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bgIcon {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 100px;
+  height: 100px;
+  opacity: 0.05;
+  color: var(--accent-1);
+  transform: rotate(-15deg);
+}
+
+.descriptionBox p {
+  color: #a0a0b0;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .cardTop {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .metaData {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .eduCard {
+    padding: 2rem;
+  }
+}

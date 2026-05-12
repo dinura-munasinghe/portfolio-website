@@ -15,7 +15,7 @@ export default function Contact() {
     const formData = new FormData(e.currentTarget);
     // Add your Web3Forms Access Key here!
     // Get one for free at https://web3forms.com/
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "b9194b06-abf2-41bf-9ebb-af87af910dd8");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -41,14 +41,14 @@ export default function Contact() {
   return (
     <main className={styles.main}>
       <section className={styles.header}>
-        <motion.h1 
+        <motion.h1
           className={styles.title}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
         >
           Let's <span className="text-gradient">Connect</span>
         </motion.h1>
-        <motion.p 
+        <motion.p
           className={styles.subtitle}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -58,7 +58,7 @@ export default function Contact() {
         </motion.p>
       </section>
 
-      <motion.section 
+      <motion.section
         className={styles.formContainer}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -67,12 +67,12 @@ export default function Contact() {
         <div className={`${styles.contactBox} glass`}>
           <div className={styles.infoSide}>
             <div className={styles.profileSection}>
-              <Image 
-                src="https://github.com/dinura-munasinghe.png" 
-                alt="Dinura Munasinghe" 
-                width={120} 
-                height={120} 
-                className={styles.contactPic} 
+              <Image
+                src="https://github.com/dinura-munasinghe.png"
+                alt="Dinura Munasinghe"
+                width={120}
+                height={120}
+                className={styles.contactPic}
               />
               <h2>Dinura Munasinghe</h2>
               <p>Computer Science undergraduate & Designer available for freelance work.</p>
@@ -89,10 +89,10 @@ export default function Contact() {
                 <a href="https://github.com/dinura-munasinghe" target="_blank" rel="noreferrer" className={styles.socialLink}>
                   <Github size={24} />
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noreferrer" className={styles.socialLink}>
+                <a href="https://web.facebook.com/dinura.munasinghe" target="_blank" rel="noreferrer" className={styles.socialLink}>
                   <Facebook size={24} />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noreferrer" className={styles.socialLink}>
+                <a href="https://www.instagram.com/dinuraz_0x/" target="_blank" rel="noreferrer" className={styles.socialLink}>
                   <Instagram size={24} />
                 </a>
               </div>
@@ -104,7 +104,7 @@ export default function Contact() {
               <label htmlFor="name">Your Name</label>
               <input type="text" id="name" name="name" required placeholder="John Doe" />
             </div>
-            
+
             <div className={styles.inputGroup}>
               <label htmlFor="email">Your Email</label>
               <input type="email" id="email" name="email" required placeholder="john@example.com" />
@@ -115,8 +115,8 @@ export default function Contact() {
               <textarea id="message" name="message" rows={5} required placeholder="How can I help you?"></textarea>
             </div>
 
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               className={styles.submitBtn}
               disabled={status === "submitting"}
             >

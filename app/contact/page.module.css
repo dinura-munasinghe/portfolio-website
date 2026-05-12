@@ -214,5 +214,19 @@
   .infoSide {
     border-right: none;
     border-bottom: 1px solid var(--surface-border);
+    padding: 2rem 1rem;
+  }
+  .form {
+    padding: 2rem 1rem;
+  }
+  .contactMethod {
+    font-size: 0.85rem;
+    padding: 0.8rem 1rem;
+    word-break: break-all;
+    width: 100%;
+    justify-content: center;
+  }
+  .socialGrid {
+    gap: 0.5rem;
   }
 }

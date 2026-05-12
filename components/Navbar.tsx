@@ -30,6 +30,7 @@ export default function Navbar() {
         <div className={styles.desktopMenu}>
           <Link href="/" className={styles.navLink}>Home</Link>
           <Link href="/projects" className={styles.navLink}>Projects</Link>
+          <Link href="/education" className={styles.navLink}>Education</Link>
           <Link href="/experience" className={styles.navLink}>Experience</Link>
           <Link href="/certifications" className={styles.navLink}>Certifications</Link>
           <Link href="/resume" className={styles.navLink}>Resume</Link>
@@ -45,6 +46,7 @@ export default function Navbar() {
         <div className={`${styles.mobileMenu} glass`}>
           <Link href="/" className={styles.navLink} onClick={() => setIsOpen(false)}>Home</Link>
           <Link href="/projects" className={styles.navLink} onClick={() => setIsOpen(false)}>Projects</Link>
+          <Link href="/education" className={styles.navLink} onClick={() => setIsOpen(false)}>Education</Link>
           <Link href="/experience" className={styles.navLink} onClick={() => setIsOpen(false)}>Experience</Link>
           <Link href="/certifications" className={styles.navLink} onClick={() => setIsOpen(false)}>Certifications</Link>
           <Link href="/resume" className={styles.navLink} onClick={() => setIsOpen(false)}>Resume</Link>

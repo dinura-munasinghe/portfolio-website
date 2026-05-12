@@ -106,6 +106,11 @@ export default function ProjectDetail() {
               <a href={project.link} target="_blank" rel="noreferrer" className={styles.primaryBtn}>
                 View Full Project <ExternalLink size={18} />
               </a>
+              {project.website && (
+                <a href={project.website.startsWith('http') ? project.website : `https://${project.website}`} target="_blank" rel="noreferrer" className={styles.secondaryBtn} style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: '1rem', padding: '1rem', borderRadius: '8px', border: '1px solid var(--accent-1)', color: 'var(--accent-1)', textDecoration: 'none' }}>
+                  Visit Live Website <ExternalLink size={18} style={{ marginLeft: '0.5rem' }} />
+                </a>
+              )}
             </div>
           </motion.div>
         </div>
