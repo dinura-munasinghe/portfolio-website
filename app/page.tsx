@@ -8,7 +8,7 @@ import styles from './page.module.css';
 
 const TypewriterText = ({ text }: { text: string }) => {
   const [displayText, setDisplayText] = useState('');
-  
+
   useEffect(() => {
     let i = 0;
     const timer = setInterval(() => {
@@ -47,26 +47,26 @@ export default function Home() {
     <main className={styles.main}>
       <section className={styles.hero}>
         <div className={styles.heroGlow}></div>
-        <motion.div 
+        <motion.div
           className={styles.heroContent}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <div className={styles.profileWrapper}>
-            <Image 
-              src="https://github.com/dinura-munasinghe.png" 
-              alt="Dinura Munasinghe" 
-              width={180} 
-              height={180} 
-              className={styles.profilePic} 
+            <Image
+              src="https://github.com/dinura-munasinghe.png"
+              alt="Dinura Munasinghe"
+              width={180}
+              height={180}
+              className={styles.profilePic}
               priority
             />
             <div className={styles.profileGlow}></div>
           </div>
-          
+
           <h1 className={styles.title}>
-            Hi, I'm <span className="text-gradient"><TypewriterText text="Dinura Munasinghe" /></span>
+            Hi, I'm <span className="text-gradient"><TypewriterText text="Diinura Munasinghe" /></span>
           </h1>
           <p className={styles.subtitle}>
             Graphic Designer & Developer
@@ -74,7 +74,7 @@ export default function Home() {
           <p className={styles.bio}>
             Computer Science undergraduate at the University of Westminster (IIT Campus) specialising in software development and UI/UX design. Hands-on experience across frontend and backend technologies with strong cross-functional leadership through AIESEC and IEEE. Passionate about building accessible, user-centred digital solutions.
           </p>
-          
+
           <div className={styles.actionButtons}>
             <Link href="/projects" className={styles.primaryBtn}>
               Explore My Work <ArrowRight size={18} />
@@ -85,14 +85,14 @@ export default function Home() {
           </div>
 
           {/* Technical Skills Section */}
-          <motion.div 
+          <motion.div
             className={styles.skillsContainer}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
             <h3 className={styles.skillsTitle}>Technical Toolkit</h3>
-            <motion.div 
+            <motion.div
               className={styles.skillsGrid}
               initial="hidden"
               animate="visible"
@@ -102,8 +102,8 @@ export default function Home() {
               }}
             >
               {skills.map((skill, index) => (
-                <motion.div 
-                  key={index} 
+                <motion.div
+                  key={index}
                   className={styles.skillBadge}
                   variants={{
                     hidden: { opacity: 0, scale: 0.8 },

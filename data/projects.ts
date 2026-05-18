@@ -76,6 +76,29 @@ export const projects: Project[] = [
     link: "https://www.figma.com/design/sfR9vTkFaSDAWNX5tM7af5/SDGP-Prototype?node-id=0-1&t=sFuIJpyTt6qeA8ef-1",
     coverImage: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=1200&q=80"
   },
+  {
+    id: "learn-steer-website",
+    title: "Learn Steer 2.0 Website",
+    category: "UI/UX Prototype",
+    shortDesc: "A comprehensive UI/UX design prototype for a Learning Management System.",
+    fullDesc: "Designed a modern, responsive web interface focused on seamless navigation and an intuitive user experience. The Figma prototype showcases clean layout structures, a cohesive design system, and structured user flows tailored for desktop users.",
+    features: ["Responsive Web Layout", "Clean & Modern Aesthetic", "Intuitive Navigation Flow", "Scalable Component Library"],
+    techStack: ["Figma", "Web Design", "UI/UX"],
+    link: "https://www.figma.com/design/Eduk5wQo1mr2tUuI4CkQtC/LS-Web?node-id=0-1&t=9ZkVD0DeCGxavt4i-1",
+    coverImage: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=1200&q=80"
+  },
+
+  {
+    id: "the-day-app",
+    title: "The Day App",
+    category: "UI/UX Prototype",
+    shortDesc: "A comprehensive UI/UX design prototype for a All in one News App.",
+    fullDesc: "Designed an intuitive and highly engaging mobile interface focused on real-time content delivery and seamless user interactions. The Figma prototype features high-fidelity screens, optimized readability layouts, and smooth navigation flows engineered for modern mobile experiences.",
+    features: ["Dynamic Content Layouts", "Optimized Mobile Readability", "Seamless User Navigation", "Cohesive Component Architecture"],
+    techStack: ["Figma", "Mobile Design", "UI/UX"],
+    link: "https://www.figma.com/design/CwnWUaMNRWcYdLBzbyz2z8/day-app?node-id=0-1&t=MNfjlOb4lHdDpWLN-1",
+    coverImage: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=1200&q=80"
+  },
 
   // Graphic Design
   {
