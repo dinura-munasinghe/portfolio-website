@@ -8,14 +8,14 @@ export default function Resume() {
   return (
     <main className={styles.main}>
       <section className={styles.header}>
-        <motion.h1 
+        <motion.h1
           className={styles.title}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
         >
           My <span className="text-gradient">Resume</span>
         </motion.h1>
-        <motion.p 
+        <motion.p
           className={styles.subtitle}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -25,7 +25,7 @@ export default function Resume() {
         </motion.p>
       </section>
 
-      <motion.section 
+      <motion.section
         className={styles.resumeContainer}
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -36,11 +36,11 @@ export default function Resume() {
             <Download size={20} /> Download PDF
           </a>
         </div>
-        
+
         <div className={`${styles.viewerWrapper} glass`}>
           {/* Note: Ensure resume.pdf is placed in the public/ directory */}
-          <iframe 
-            src="/resume.pdf" 
+          <iframe
+            src="/Dinura-Munasinghe.pdf"
             className={styles.pdfViewer}
             title="Resume Preview"
           />
